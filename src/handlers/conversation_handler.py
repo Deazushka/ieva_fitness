@@ -7,8 +7,9 @@ from telegram.ext import (
     filters,
 )
 
+import os
 import sys
-sys.path.insert(0, "/Users/aliaksandr/IdeaProjects/MyTraningProjectAqa/myfavoritestask/new_version_tg_bot/src")
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from database import (
     init_db,

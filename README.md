@@ -19,20 +19,22 @@ pip install -r requirements.txt
 TELEGRAM_BOT_TOKEN=your_token_here
 ```
 
-## Запуск
+## Локальный запуск (polling)
 
 ```bash
 source venv/bin/activate
-python src/bot.py
+python src/bot_local.py
 ```
 
-## Использование
+## Деплой на Render (webhook)
 
-1. Создайте бота через [@BotFather](https://t.me/BotFather)
-2. Получите токен
-3. Добавьте токен в `.env`
-4. Запустите бота
-5. Отправьте `/start` в Telegram
+1. Залей репозиторий на GitHub
+2. Создай **Web Service** на Render
+3. Подключи репозиторий
+4. Добавь переменные окружения:
+   - `TELEGRAM_BOT_TOKEN` — токен бота
+   - `RENDER_EXTERNAL_URL` — URL сервиса (например, `https://your-app.onrender.com`)
+5. Deploy
 
 ## Функции
 
